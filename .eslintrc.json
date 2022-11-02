@@ -1,0 +1,64 @@
+{
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:react/jsx-runtime",
+    "prettier"
+  ],
+  "plugins": ["eslint-plugin-import-helpers", "prettier"],
+  "overrides": [
+    {
+      "files": ["*.{js,jsx}"],
+      "rules": {
+        "no-undef": "error",
+        "consistent-return": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off"
+      }
+    },
+    {
+      "files": ["src/pages/**/*"],
+      "rules": {
+        "import/no-default-export": "off"
+      }
+    }
+  ],
+  "rules": {
+    "no-undef": "off",
+    "import-helpers/order-imports": [
+      "error",
+      {
+        "groups": [
+          ["/^react$/", "/^react/.+$/"],
+          ["/^next$/", "/^next/.+$/"],
+          "module",
+          "/^~processes/",
+          "/^~widgets/",
+          "/^~features/",
+          "/^~entities/",
+          "/^~shared/",
+          ["parent", "sibling", "index"]
+        ],
+        "newlinesBetween": "always",
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ],
+    "prettier/prettier": ["error"],
+    "import/prefer-default-export": "off",
+    "import/no-default-export": ["error"],
+    "react/require-default-props": "off",
+    "react/jsx-no-undef": "off",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  }
+}

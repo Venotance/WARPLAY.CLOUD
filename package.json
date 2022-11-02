@@ -1,0 +1,50 @@
+{
+  "name": "warplay",
+  "version": "0.1.0",
+  "repository": "git@github.com:Venotance/WARPLAY.CLOUD.git",
+  "author": "Stanislav Volkov",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:analyze": "cross-env ANALYZE=true next build",
+    "start": "next start",
+    "lint": "tsc --noEmit --pretty -p tsconfig.json && eslint src --color",
+    "lint:fix": "tsc --noEmit --pretty -p tsconfig.json && eslint src --color --fix"
+  },
+  "dependencies": {
+    "next": "13.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@types/classnames": "^2.3.1",
+    "@types/node": "18.11.8",
+    "@types/react": "18.0.24",
+    "@types/react-dom": "18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "classnames": "^2.3.2",
+    "eslint": "8.26.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^15.0.0",
+    "eslint-config-next": "13.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import-helpers": "^1.1.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "lint-staged": "^13.0.3",
+    "next-compose-plugins": "^2.2.1",
+    "prettier": "^2.7.1",
+    "sass": "^1.55.0",
+    "simple-git-hooks": "^2.8.1",
+    "typescript": "4.8.4"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged",
+    "commit-msg": "npx commitlint -e"
+  }
+}

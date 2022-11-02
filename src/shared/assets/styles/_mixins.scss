@@ -1,0 +1,12 @@
+@mixin font-face($name, $path, $fw) {
+  $format: "woff", "woff2";
+  $qq: "1" + 2;
+
+  @for $var from 1 to 3 {
+    @font-face {
+      font-family: $name;
+      font-weight: $fw;
+      src: url($src + "." + nth($format, $var)), format($format);
+    }
+  }
+}
