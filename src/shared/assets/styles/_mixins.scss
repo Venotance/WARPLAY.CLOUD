@@ -6,7 +6,7 @@
     @font-face {
       font-family: $name;
       font-weight: $fw;
-      src: url($path + "." + nth($format, $var)), format(nth($format, $var));
+      src: url($path + "." + nth($format, $var)) format(nth($format, $var));
     }
   }
 }
