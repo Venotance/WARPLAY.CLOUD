@@ -12,7 +12,7 @@ interface LogoInterface {
 }
 
 export const Logo: FC<LogoInterface> = ({ className }) => (
-  <Link href="/" className={cx(className, styles.logo)}>
+  <Link href="/" className={cx(styles.logo, className)}>
     <LogoIcon />
     <p className={cx(styles.text)}>WARPLAY.CLOUD</p>
   </Link>

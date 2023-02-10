@@ -12,13 +12,14 @@ import styles from './Menu.module.scss';
 
 interface MenuInterface {
   menuList: LinkNavInterface[];
+  className: string;
 }
 
-export const Menu: FC<MenuInterface> = ({ menuList }) => {
+export const Menu: FC<MenuInterface> = ({ menuList, className }) => {
   const router = useRouter();
   const pathName = router.pathname;
   return (
-    <nav className={cx(styles.wrap)}>
+    <nav className={cx(styles.wrap, className)}>
       <ul className={cx(styles['link-list'])}>
         {pathName &&
           menuList.map((item) => (

@@ -9,7 +9,7 @@ const nextConfiguration = {
   },
   sassOptions: {
     includePaths: [path.join(__dirname, './src/shared/assets/styles')],
-    prependData: `@import "_variables.scss";`
+    prependData: `@import "_global-import.scss";`
   },
   typescript: {
     // !! WARN !!

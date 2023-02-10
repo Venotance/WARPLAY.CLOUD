@@ -1,0 +1,34 @@
+.user-ico {
+  background-color: darken($bcgrd_color, 10%);
+  & svg {
+    color: darken(#fff, 10%);
+    transition: all 1.3s ease;
+  }
+}
+
+.noauth-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  transition: all 1.3s ease;
+  border-radius: 10px;
+  &:hover {
+    & > p,
+    & svg {
+      color: #fff;
+      transition: all 1.3s ease;
+    }
+    font-weight: 300;
+    background-color: #222c35;
+    transition: all 1.3s ease;
+  }
+
+  & > p {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 16px;
+    transition: all 1.3s ease;
+    color: darken(#fff, 10%);
+  }
+}

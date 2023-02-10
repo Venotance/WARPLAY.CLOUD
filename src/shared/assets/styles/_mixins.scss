@@ -10,3 +10,19 @@
     }
   }
 }
+
+@mixin animation-mixin($name, $color1, $color2) {
+  @keyframes #{$name} {
+    0% {
+      background-color: $color1;
+    }
+    100% {
+      background-color: $color2;
+    }
+  }
+}
+
+@mixin smooth-appearance-color($name1, $name2, $color1, $color2) {
+  @include animation-mixin($name1, $color1, $color2);
+  @include animation-mixin($name2, $color2, $color1);
+}

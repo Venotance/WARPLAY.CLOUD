@@ -1,10 +1,9 @@
+import '~shared/assets/styles/globals.scss';
 import { ReactElement, ReactNode } from 'react';
 
 import { NextPage } from 'next';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-
-import '~shared/assets/styles/globals.scss';
 
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;
