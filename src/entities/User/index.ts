@@ -1,1 +1,1 @@
-export { HeaderUser as HdrUser } from './ui/HeaderUser';
+export { HeaderUser as HdrUser } from './ui/HeaderUser/HeaderUser';
