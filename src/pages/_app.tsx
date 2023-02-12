@@ -1,3 +1,4 @@
+import '~shared/assets/styles/globals.scss';
 import { ReactElement, ReactNode } from 'react';
 
 import { NextPage } from 'next';

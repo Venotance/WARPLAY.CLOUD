@@ -6,7 +6,19 @@
     @font-face {
       font-family: $name;
       font-weight: $fw;
-      src: url($src + "." + nth($format, $var)), format($format);
+      src: url($path + "." + nth($format, $var)) format(nth($format, $var));
     }
+  }
+}
+
+@mixin import-tarif-mixin(){
+  .basic {
+    background-color: $bcgrd_tariff_basic;
+  }
+  .standart {
+    background-color: $bcgrd_tariff_standart;
+  }
+  .premium {
+    background-color: $bcgrd_tariff_premium;
   }
 }

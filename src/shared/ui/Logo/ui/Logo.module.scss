@@ -1,0 +1,13 @@
+.logo {
+  display: flex;
+  height: max-content;
+  gap: 17px;
+  align-items: center;
+  vertical-align: middle;
+}
+.text {
+  margin-top: 4px;
+  font-family: "Pulsar", Times, serif;
+  font-size: 24px;
+  color: $mini_title_color;
+}
