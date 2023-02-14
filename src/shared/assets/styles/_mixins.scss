@@ -11,7 +11,7 @@
   }
 }
 
-@mixin import-tarif-mixin(){
+@mixin import-tarif-mixin {
   .basic {
     background-color: $bcgrd_tariff_basic;
   }
@@ -20,5 +20,34 @@
   }
   .premium {
     background-color: $bcgrd_tariff_premium;
+  }
+}
+
+@mixin fonts-headings($fz: 39, $clr: #fff, $lnh: $fz) {
+  font-family: "AireEx";
+  font-weight: 400;
+  font-size: $fz;
+  line-height: $lnh;
+  color: $clr;
+}
+
+@mixin fonts-main($fz: 16, $clr: #fff, $fw: 300, $lnh: $fz) {
+  font-family: "Roboto";
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $fz;
+  color: $clr;
+}
+
+@mixin ani-smooth-mixin($delay: 2s) {
+  animation: ani-smooth $delay forwards;
+}
+
+@keyframes ani-smooth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

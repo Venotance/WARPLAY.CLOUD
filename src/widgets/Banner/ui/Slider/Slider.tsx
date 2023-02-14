@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, ReactElement } from 'react';
 
 import Image from 'next/image';
 
@@ -10,18 +10,20 @@ import styles from './Slider.module.scss';
 
 interface SliderInterface {
   imgArray: string[];
+  children?: ReactElement;
 }
 
-export const Slider: FC<SliderInterface> = ({ imgArray }) => (
-  <div className={cx(styles['slider-wrap'])}>
+export const Slider: FC<SliderInterface> = ({ imgArray, children }) => (
+  <div className={cx(styles.wrap)}>
+    {children}
     <Swiper
       modules={[Autoplay]}
-      spaceBetween={50}
       slidesPerView={1}
       speed={1000}
+      className={cx(styles['swiper-style'])}
       loop
       autoplay={{
-        delay: 3000,
+        delay: 3200,
         disableOnInteraction: false,
       }}
     >
