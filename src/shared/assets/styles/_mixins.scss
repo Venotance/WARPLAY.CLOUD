@@ -24,7 +24,7 @@
 }
 
 @mixin fonts-headings($fz: 39, $clr: #fff, $lnh: $fz) {
-  font-family: "AireEx";
+  font-family: var(--aireExterior-font);
   font-weight: 400;
   font-size: $fz;
   line-height: $lnh;

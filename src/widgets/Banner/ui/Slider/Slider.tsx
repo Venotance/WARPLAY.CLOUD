@@ -6,10 +6,12 @@ import cx from 'classnames';
 import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { ImageForSliderInterface } from '~widgets/Banner/data/data';
+
 import styles from './Slider.module.scss';
 
 interface SliderInterface {
-  imgArray: string[];
+  imgArray: ImageForSliderInterface[];
   children?: ReactElement;
 }
 
@@ -31,16 +33,17 @@ export const Slider: FC<SliderInterface> = ({ imgArray, children }) => (
         <Image
           quality={90}
           loading="eager"
+          priority
           fill
           style={{ objectFit: 'cover' }}
-          src={imgArray[0]}
+          src={imgArray[0].image}
           alt=""
         />
       </SwiperSlide>
       {imgArray.length > 1 &&
         imgArray.slice(1).map((item) => (
-          <SwiperSlide className={cx(styles.slide)}>
-            <Image quality={90} fill style={{ objectFit: 'cover' }} src={item} alt="" />
+          <SwiperSlide key={item.id} className={cx(styles.slide)}>
+            <Image quality={90} fill style={{ objectFit: 'cover' }} src={item.image} alt="" />
           </SwiperSlide>
         ))}
     </Swiper>
