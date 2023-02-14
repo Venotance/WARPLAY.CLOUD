@@ -5,7 +5,7 @@ import cx from 'classnames';
 
 import { TariffType } from '~entities/Tariff';
 
-import { ButtonSmooth } from '~shared/ui/Logo/ui/ButtonSmooth/ButtonSmooth';
+import { ButtonSmooth } from '~shared/ui/ButtonSmooth/ButtonSmooth';
 
 import styles from './DropdownUser.module.scss';
 

@@ -1,6 +1,9 @@
 .wrap {
+  display: flex;
+  flex-direction: column;
   pointer-events: none;
   user-select: none;
+  justify-content: center;
   align-items: center;
   z-index: 2;
   position: absolute;
@@ -28,12 +31,8 @@
 }
 
 .text-wrap {
-  position: absolute;
-  width: max-content;
-  height: max-content;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin-top: 17%;
 }
 
 .title {
@@ -51,6 +50,10 @@
   text-shadow: 0px 0px 19px rgba(0, 0, 0, 0.9);
   text-align: center;
   @include ani-smooth-mixin;
+}
+
+.btn {
+  margin-top: 97px;
 }
 
 @keyframes typing {

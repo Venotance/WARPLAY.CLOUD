@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/less/autoplay';
 import { ImageForSlider } from '../data/data';
 import styles from './Banner.module.scss';
-import { Decor } from './Decor/Decor';
+import { ContentSlider } from './ContentSlider/ContentSlider';
 import { Slider } from './Slider/Slider';
 
 interface BannerInterface {}
@@ -14,7 +14,7 @@ interface BannerInterface {}
 export const Banner: FC<BannerInterface> = () => (
   <div className={cx(styles.wrap)}>
     <Slider imgArray={ImageForSlider}>
-      <Decor />
+      <ContentSlider />
     </Slider>
   </div>
 );
