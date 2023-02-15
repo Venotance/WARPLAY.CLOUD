@@ -23,7 +23,13 @@
     {
       "files": ["src/pages/**/*"],
       "rules": {
-        "import/no-default-export": "off"
+        "import/no-default-export": "off",
+        "react/no-unknown-property": [
+          2,
+          {
+            "ignore": ["jsx", "global"]
+          }
+        ]
       }
     }
   ],

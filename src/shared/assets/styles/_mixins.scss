@@ -23,7 +23,7 @@
   }
 }
 
-@mixin fonts-headings($fz: 39, $clr: #fff, $lnh: $fz) {
+@mixin fonts-headings($fz: 39px, $clr: #fff, $lnh: $fz) {
   font-family: var(--aireExterior-font);
   font-weight: 400;
   font-size: $fz;
@@ -31,11 +31,11 @@
   color: $clr;
 }
 
-@mixin fonts-main($fz: 16, $clr: #fff, $fw: 300, $lnh: $fz) {
-  font-family: "Roboto";
+@mixin fonts-main($fz: 16px, $clr: #fff, $fw: 300, $lnh: inherit) {
+  font-family: var(--roboto-font);
   font-weight: $fw;
   font-size: $fz;
-  line-height: $fz;
+  line-height: $lnh;
   color: $clr;
 }
 
