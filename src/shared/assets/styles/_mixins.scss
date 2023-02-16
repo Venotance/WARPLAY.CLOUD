@@ -51,3 +51,14 @@
     opacity: 1;
   }
 }
+
+@mixin main-block-styles {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+@mixin text-gray-styles {
+  @include fonts-main($fz: 21px, $clr: $gray_text_color);
+  line-height: 150%;
+}
