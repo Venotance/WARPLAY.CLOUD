@@ -5,7 +5,8 @@ import cx from 'classnames';
 
 import { TariffType } from '~entities/Tariff';
 
-import { ButtonSmooth } from '~shared/ui/Logo/ui/ButtonSmooth/ButtonSmooth';
+import { roboto } from '~shared/layouts/main-layout/font-layout';
+import { ButtonSmooth } from '~shared/ui/ButtonSmooth/ButtonSmooth';
 
 import styles from './DropdownUser.module.scss';
 
@@ -15,7 +16,7 @@ interface DropdownUserInterface {
 }
 
 export const DropdownUser: FC<DropdownUserInterface> = ({ mail, tariff }) => (
-  <div className={cx(styles.wrap)}>
+  <div className={cx(styles.wrap, `${roboto.className}`)}>
     <ul className={cx(styles.info)}>
       <li>
         <p className={cx(styles.mail)}>{mail}</p>
@@ -35,18 +36,10 @@ export const DropdownUser: FC<DropdownUserInterface> = ({ mail, tariff }) => (
     </ul>
     <ul className={cx(styles['link-wrap'])}>
       <li>
-        <ButtonSmooth
-          ico={<SettingOutlined />}
-          text="Settings"
-          className={cx(styles['settings-ico'])}
-        />
+        <ButtonSmooth ico={<SettingOutlined />} text="Settings" className={cx(styles.settings)} />
       </li>
       <li>
-        <ButtonSmooth
-          ico={<ExportOutlined />}
-          text="Log out"
-          className={cx(styles['logout-ico'])}
-        />
+        <ButtonSmooth ico={<ExportOutlined />} text="Log out" className={cx(styles.logout)} />
       </li>
     </ul>
   </div>

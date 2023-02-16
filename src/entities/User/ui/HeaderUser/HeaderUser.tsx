@@ -4,7 +4,7 @@ import { UserOutlined } from '@ant-design/icons';
 import { Avatar, Dropdown } from 'antd';
 import cx from 'classnames';
 
-import { ButtonSmooth } from '~shared/ui/Logo/ui/ButtonSmooth/ButtonSmooth';
+import { ButtonSmooth } from '~shared/ui/ButtonSmooth/ButtonSmooth';
 
 import { DropdownUser } from './DropdownUser/DropdownUser';
 import styles from './HeaderUser.module.scss';

@@ -32,8 +32,9 @@
 
 .mail {
   color: #fff;
-  font-family: "Roboto";
+  font-family: var(--roboto-font);
   font-size: 16px;
+  font-weight: 400;
 }
 
 .tariff {
@@ -42,7 +43,7 @@
   padding: 4px;
   border-radius: 6px;
   color: #fff;
-  font-family: "Roboto";
+  font-family: var(--roboto-font);
   font-size: 12px;
   font-weight: 400;
   width: max-content;
@@ -57,16 +58,15 @@
   gap: 7px;
 }
 
-.settings-ico,
-.logout-ico {
+.settings,
+.logout {
   gap: 17px;
   & svg {
     width: 20px;
     height: 20px;
     color: #fff;
   }
-  & p,
-  .mail {
+  & p {
     font-weight: 400;
   }
 }
