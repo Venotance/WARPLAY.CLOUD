@@ -6,12 +6,12 @@ import cx from 'classnames';
 import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { ImageForSliderInterface } from '~widgets/Banner/data/data';
+import { ImageArrayItemInterface } from '~shared/lib/ImageHelpers/ImageArrayInterface';
 
 import styles from './Slider.module.scss';
 
 interface SliderInterface {
-  imgArray: ImageForSliderInterface[];
+  imgArray: ImageArrayItemInterface[];
   children?: ReactElement;
 }
 

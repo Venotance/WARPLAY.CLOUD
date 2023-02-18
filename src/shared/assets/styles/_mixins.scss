@@ -58,6 +58,20 @@
   position: relative;
 }
 
+@mixin content-block-styles {
+  @include main-block-styles;
+  padding: 42px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 45px;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
 @mixin text-gray-styles {
   @include fonts-main($fz: 21px, $clr: $gray_text_color);
   line-height: 150%;

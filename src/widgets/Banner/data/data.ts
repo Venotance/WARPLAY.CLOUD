@@ -1,14 +1,10 @@
-import astronaut from '~shared/assets/images/astronaut.png';
-import fight from '~shared/assets/images/fight.png';
-import king from '~shared/assets/images/king.png';
-import stalker from '~shared/assets/images/stalker.png';
+import astronaut from '~shared/assets/images/slider/astronaut.png';
+import fight from '~shared/assets/images/slider/fight.png';
+import king from '~shared/assets/images/slider/king.png';
+import stalker from '~shared/assets/images/slider/stalker.png';
+import { ImageArrayItemInterface } from '~shared/lib/ImageHelpers/ImageArrayInterface';
 
-export interface ImageForSliderInterface {
-  id: number;
-  image: string;
-}
-
-export const ImageForSlider: ImageForSliderInterface[] = [
+export const ImageForSlider: ImageArrayItemInterface[] = [
   { id: 0, image: stalker },
   { id: 1, image: king },
   { id: 2, image: astronaut },
