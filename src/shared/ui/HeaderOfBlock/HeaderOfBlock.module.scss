@@ -5,7 +5,7 @@
 }
 
 .text {
-  @include fonts-main($fz: 16px, $clr: $mini_title_color, $fw: 300);
+  @include fonts-main($fz: 16px, $clr: $mini_title_color, $fw: 300, $lnh: 180%);
 }
 
 .line {

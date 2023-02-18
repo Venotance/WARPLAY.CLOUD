@@ -1,0 +1,26 @@
+.wrap {
+  @include content-block-styles;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    margin-top: 15px;
+  }
+
+  .steps {
+    display: flex;
+    position: relative;
+    margin-top: 90px;
+    max-width: 900px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .btn {
+    margin-top: 90px;
+    padding: 6px;
+  }
+}
