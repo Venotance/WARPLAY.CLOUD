@@ -43,6 +43,9 @@ body {
   -webkit-text-size-adjust: 100%;
   background-color: $bcgrd_color;
 }
+html {
+  height: auto;
+}
 input,
 button,
 textarea {

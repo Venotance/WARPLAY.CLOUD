@@ -13,7 +13,7 @@ import { Step } from './Step/Step';
 interface StartPlayingInterface {}
 
 export const StartPlaying: FC<StartPlayingInterface> = () => (
-  <div className={cx(styles.wrap)}>
+  <section className={cx(styles.wrap)}>
     <HeaderOfBlock className={cx(styles.header)} text="Quick start" />
     <TitleOfBlock className={cx(styles.title)} text="Start playing" />
     <div className={cx(styles.steps)}>
@@ -27,5 +27,5 @@ export const StartPlaying: FC<StartPlayingInterface> = () => (
       ))}
     </div>
     <SmallBtnOfBlock className={cx(styles.btn)} text="Begin" />
-  </div>
+  </section>
 );

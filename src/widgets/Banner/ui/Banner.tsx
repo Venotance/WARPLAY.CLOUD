@@ -12,9 +12,9 @@ import { Slider } from './Slider/Slider';
 interface BannerInterface {}
 
 export const Banner: FC<BannerInterface> = () => (
-  <div className={cx(styles.wrap)}>
+  <section className={cx(styles.wrap)}>
     <Slider imgArray={ImageForSlider}>
       <ContentSlider />
     </Slider>
-  </div>
+  </section>
 );
