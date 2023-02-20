@@ -6,19 +6,25 @@
   width: 251px;
   height: 61px;
   pointer-events: all;
-  background-color: #000;
-  clip-path: polygon(0 0, 93% 0, 100% 25%, 100% 100%, 0 100%);
   @include fonts-headings(24px, #000);
+  color: #fff;
+  background-color: #000;
+  transition: all 0.5s ease;
+  border-radius: 5px;
 
   &:hover {
-    color: #fff;
-
-    &::before {
-      transform: skew(45deg) translateX(100%);
-      transition: all 0.5s ease;
-    }
+    color: #000;
+    background-color: #fff;
+    transition: all 0.5s ease;
   }
+}
 
+.cut-corner {
+  clip-path: polygon(0 0, 93% 0, 100% 25%, 100% 100%, 0 100%);
+  background-color: #000;
+  color: #000;
+  transition: none;
+  
   &::before {
     content: "";
     position: absolute;
@@ -27,9 +33,19 @@
     width: 130%;
     height: 100%;
     z-index: -1;
-    background: #fff;
-    transform: skew(45deg) translateX(-10%);
+    background-color: #fff;
+    transform: translateX(-10%);
     z-index: -1;
     transition: all 0.5s ease;
+    transform: skew(45deg) translateX(-10%);
+    transition: all 0.5s ease;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+    transition: none;
+    &::before {
+      transform: skew(45deg) translateX(100%);
+    }
   }
 }
