@@ -10,7 +10,6 @@ interface BtnСutСornerInterface {
   href: string;
   text: string;
   cutCorner?: boolean;
-  smooth?: boolean;
   className?: string;
 }
 
