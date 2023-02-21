@@ -9,11 +9,17 @@ import styles from './BtnСutСorner.module.scss';
 interface BtnСutСornerInterface {
   href: string;
   text: string;
-  classNames?: string;
+  cutCorner?: boolean;
+  className?: string;
 }
 
-export const BtnСutСorner: FC<BtnСutСornerInterface> = ({ href, text, classNames }) => (
-  <Link href={href} className={cx(classNames, styles.wrap)}>
+export const BtnСutСorner: FC<BtnСutСornerInterface> = ({
+  href,
+  text,
+  className,
+  cutCorner = false,
+}) => (
+  <Link href={href} className={cx(className, styles.wrap, { [styles['cut-corner']]: cutCorner })}>
     {text}
   </Link>
 );

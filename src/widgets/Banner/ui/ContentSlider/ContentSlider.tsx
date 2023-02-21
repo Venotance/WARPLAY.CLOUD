@@ -14,6 +14,6 @@ export const ContentSlider: FC<ContentSliderInterface> = () => (
       <h1 className={cx(styles.subtitle)}>Cloud Gaming Service</h1>
       <h3 className={cx(styles.title)}>Turn your device into a gaming device!</h3>
     </div>
-    <BtnСutСorner href="#" text="UPGRADE" classNames={cx(styles.btn)} />
+    <BtnСutСorner cutCorner href="#" text="UPGRADE" className={cx(styles.btn)} />
   </div>
 );
