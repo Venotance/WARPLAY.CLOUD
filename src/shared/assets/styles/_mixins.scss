@@ -54,7 +54,7 @@
 
 @mixin main-block-styles {
   width: 100%;
-  height: 100vh;
+  height: minmax(100vh, max-content);
   position: relative;
 }
 
