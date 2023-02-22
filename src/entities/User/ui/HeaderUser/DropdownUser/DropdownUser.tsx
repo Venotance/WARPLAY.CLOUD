@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, RefObject } from 'react';
 
 import { ExportOutlined, SettingOutlined } from '@ant-design/icons';
 import cx from 'classnames';
@@ -13,10 +13,11 @@ import styles from './DropdownUser.module.scss';
 interface DropdownUserInterface {
   mail: string;
   tariff: TariffType;
+  refDrop: RefObject<HTMLDivElement>;
 }
 
-export const DropdownUser: FC<DropdownUserInterface> = ({ mail, tariff }) => (
-  <div className={cx(styles.wrap, `${roboto.className}`)}>
+export const DropdownUser: FC<DropdownUserInterface> = ({ mail, tariff, refDrop }) => (
+  <div ref={refDrop} className={cx(styles.wrap, `${roboto.className}`)}>
     <ul className={cx(styles.info)}>
       <li>
         <p className={cx(styles.mail)}>{mail}</p>

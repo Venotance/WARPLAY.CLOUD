@@ -36,6 +36,10 @@ export const Slider: FC<SliderInterface> = ({ imgArray, children }) => (
           priority
           fill
           style={{ objectFit: 'cover' }}
+          sizes="(max-width: 768px) 90vw,
+          (max-width: 1300px) 90vh,
+          (max-width: 1500px) 1400px,
+          1920px"
           src={imgArray[0].image}
           alt=""
         />
