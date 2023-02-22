@@ -7,7 +7,7 @@ export function getLayout(page: ReactElement): ReactElement {
   return (
     <FontLayout>
       <>
-        <MainLayout>{page}</MainLayout>;
+        <MainLayout>{page}</MainLayout>
       </>
     </FontLayout>
   );

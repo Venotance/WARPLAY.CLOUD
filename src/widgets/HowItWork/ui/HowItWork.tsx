@@ -12,7 +12,7 @@ import { ImgServerHost } from './ImgServerHost/ImgServerHost';
 interface HowItWorkInterface {}
 
 export const HowItWork: FC<HowItWorkInterface> = () => (
-  <div className={cx(styles.wrap)}>
+  <section className={cx(styles.wrap)}>
     <ImgServerHost />
     <div className={cx(styles.description)}>
       <HeaderOfBlock text="Cloud Gaming" />
@@ -26,5 +26,5 @@ export const HowItWork: FC<HowItWorkInterface> = () => (
       </p>
       <SmallBtnOfBlock animationDir="right" className={cx(styles.btn)} text="Download" />
     </div>
-  </div>
+  </section>
 );

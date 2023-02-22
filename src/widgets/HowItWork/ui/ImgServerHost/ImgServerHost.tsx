@@ -16,6 +16,8 @@ export const ImgServerHost: FC<ImgServerHostInterface> = () => (
       className={cx(styles.img)}
       style={{ objectFit: 'contain' }}
       fill
+      sizes="(max-width: 768px) 100vw,
+      800px"
       src={serverHost}
       alt=""
     />
