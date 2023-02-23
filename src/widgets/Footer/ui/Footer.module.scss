@@ -1,0 +1,80 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  width: 100%;
+  padding: 0 87px 0 150px;
+  background-color: $footer_color;
+
+  .visual {
+    display: flex;
+    align-items: center;
+
+    p {
+      white-space: nowrap;
+    }
+
+    .logo {
+      pointer-events: none;
+      gap: 25px;
+      p {
+        color: $footer_text_color;
+      }
+    }
+    .rights,
+    .design {
+      font-family: var(--pulsar-font), Times, serif;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    .rights {
+      margin-left: 29px;
+      color: $footer_text_color;
+    }
+    .design-wrap {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+      .design {
+        color: $footer_text_gray;
+      }
+      div {
+        margin-top: -4px;
+        margin-left: 7px;
+      }
+    }
+  }
+
+  .additional-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 350px;
+    width: 100%;
+    justify-content: space-between;
+
+    .cookie,
+    .policy {
+      height: 18px;
+      @include fonts-main($fz: 12px, $fw: 200, $lnh: 17px);
+      white-space: nowrap;
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+    }
+
+    .link-messengers {
+      display: flex;
+      gap: 10px;
+
+      .vk:hover,
+      .dis:hover,
+      .ytube:hover {
+        svg {
+          fill: $footer_text_gray;
+        }
+      }
+    }
+  }
+}

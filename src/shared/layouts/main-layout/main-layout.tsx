@@ -1,6 +1,6 @@
 import { FC, ReactElement } from 'react';
 
-import { Footer } from '~widgets/Footer/Footer';
+import { Footer } from '~widgets/Footer';
 import { Header } from '~widgets/Header/Header';
 
 interface MainLayoutInterface {
