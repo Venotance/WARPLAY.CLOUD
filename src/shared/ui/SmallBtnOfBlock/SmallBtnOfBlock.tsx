@@ -31,6 +31,9 @@ export const SmallBtnOfBlock: FC<SmallBtnOfBlockInterface> = ({
       {
         [styles['link-right']]: animationDir === 'right',
       },
+      {
+        [styles['link-left']]: animationDir === 'left',
+      },
       className
     )}
   >

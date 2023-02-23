@@ -47,7 +47,14 @@ export const Slider: FC<SliderInterface> = ({ imgArray, children }) => (
       {imgArray.length > 1 &&
         imgArray.slice(1).map((item) => (
           <SwiperSlide key={item.id} className={cx(styles.slide)}>
-            <Image quality={90} fill style={{ objectFit: 'cover' }} src={item.image} alt="" />
+            <Image
+              placeholder="blur"
+              quality={90}
+              fill
+              style={{ objectFit: 'cover' }}
+              src={item.image}
+              alt=""
+            />
           </SwiperSlide>
         ))}
     </Swiper>
