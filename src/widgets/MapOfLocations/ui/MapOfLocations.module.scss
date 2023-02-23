@@ -1,0 +1,24 @@
+.wrap {
+  @include main-block-styles;
+  padding: 45px 45px 87px 45px;
+  display: flex;
+  max-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    margin-top: 5px;
+  }
+
+  .wrap-img {
+    display: block;
+    margin-top: 30px;
+    width: 726px;
+    height: 396px;
+    position: relative;
+
+    .img {
+    }
+  }
+}

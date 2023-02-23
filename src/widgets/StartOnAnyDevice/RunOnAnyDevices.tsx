@@ -14,7 +14,7 @@ import styles from './RunOnAnyDevices.module.scss';
 interface RunOnAnyDevicesInterface {}
 
 export const RunOnAnyDevices: FC<RunOnAnyDevicesInterface> = () => (
-  <div className={cx(styles.wrap)}>
+  <section className={cx(styles.wrap)}>
     <div className={cx(styles.content)}>
       <HeaderOfBlock text="You can play in the browser" />
       <TitleOfBlock className={cx(styles.title)} text="Run on any devices" />
@@ -35,5 +35,5 @@ export const RunOnAnyDevices: FC<RunOnAnyDevicesInterface> = () => (
         alt=""
       />
     </div>
-  </div>
+  </section>
 );
